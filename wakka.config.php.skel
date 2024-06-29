@@ -1,0 +1,34 @@
+<?php
+// wakka.config.php crÃ©Ã©e Sat Jun 23 17:00:59 2024
+// ne changez pas la wikini_version manuellement!
+
+$wakkaConfig = array (
+  'wakka_version' => '0.2.0',
+  'wikini_version' => '0.6.0',
+  'debug' => 'no',
+  'mysqli_host' => '',
+  'mysqli_database' => '',
+  'mysqli_user' => '',
+  'mysqli_password' => '',
+  'mysqli_port' => '3306',
+  'table_prefix' => 'wikini_',
+  'root_page' => 'Wikini',
+  'wakka_name' => "WikiBoard",
+  'base_url' => 'https://domain.tld/wakka.php?wiki=',
+  'rewrite_mode' => '0',
+  'meta_keywords' => '',
+  'meta_description' => '',
+  'action_path' => 'actions',
+  'handler_path' => 'handlers',
+  'header_action' => 'header',
+  'footer_action' => 'footer',
+  'navigation_links' => 'DerniersChangements :: DerniersCommentaires :: ParametresUtilisateur',
+  'referrers_purge_time' => 24,
+  'pages_purge_time' => 365,
+  'default_write_acl' => '+',
+  'default_read_acl' => '*',
+  'default_comment_acl' => '  ',
+  'preview_before_save' => '0',
+  'allow_raw_html' => false,
+);
+?>
