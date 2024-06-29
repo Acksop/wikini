@@ -1,0 +1,6 @@
+@media (max-width: 560px) {
+    img{
+        max-width: 95vw;
+        height: auto;
+    }
+}

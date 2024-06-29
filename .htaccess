@@ -1,0 +1,30 @@
+AddType x-mapp-php5 .html
+
+<IfModule mod_rewrite.c>
+
+	RewriteEngine On
+	RewriteBase /
+
+	RewriteCond %{HTTP_HOST} www\.wikini.besanÃ§on25\.fr+$
+	RewriteRule ^(.*) https://wikini.besanÃ§on25.fr/$1 [QSA,L,R=301]
+
+	#RewriteCond %{QUERY_STRING} ^/wakka.php?wiki(.*)+$
+	#RewriteRule wakka.php?wiki=(.*) $1 [QSA,L,R=301]
+
+	RewriteCond %{REQUEST_FILENAME} -f
+	RewriteRule .* - [L]
+
+
+	#Redirection page Wikini
+	#RewriteRule (.*) /wakka.php?wiki=$1 [L]
+	#RewriteRule wakka/(.*) /wakka.php?wiki=$1 [L]
+
+	RewriteRule index /index.php [L]
+	RewriteRule home /index.php [L]
+	RewriteRule accueil /index.php [L]
+	RewriteRule acceuil /index.php [L]
+
+</IfModule>
+
+
+DirectoryIndex wakka.php index.php
